@@ -121,6 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+  const onClickReset = () => {
+    num1 = "";
+    operator = "";
+    num2 = "";
+    formula.textContent = "";
+    answer.textContent = "0";
+  };
+
   document.querySelector("#num0").addEventListener("click", onClickNum);
   document.querySelector("#num1").addEventListener("click", onClickNum);
   document.querySelector("#num2").addEventListener("click", onClickNum);
@@ -139,13 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", onClickOperator);
   document.querySelector("#divide").addEventListener("click", onClickOperator);
 
-  document.querySelector("#reset").addEventListener("click", () => {
-    num1 = "";
-    operator = "";
-    num2 = "";
-    formula.textContent = "";
-    answer.textContent = "0";
-  });
+  document.querySelector("#reset").addEventListener("click", onClickReset);
   document.querySelector("#open-bracket").addEventListener("click", () => {
     // 괄호 바로 다음으로 연산자나 닫는 괄호, =, . 이 오지 못하게 해야함
     answer.textContent = e.target.textContent;
