@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+header h1 {
+  margin-bottom: 100px;
+  height: 200px;
+  background-color: #02c753;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.screen {
+  height: 100px;
+  width: 460px;
+  border: solid 1px #eeeff0;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #f5faf7;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+
+.formula {
+  font-size: 20px;
+  color: #8f8f8f;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.answer {
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.keypad {
+  background-color: #eceff3;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border: solid 1px #eeeff0;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.btn.number {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 1px 1px #dfe4eb;
+  color: #6b707a;
+}
+
+.btn.operator {
+  background-color: #e5eaf1;
+  color: #6b707a;
+  box-shadow: 1px 1px 1px 1px #d1d6dd;
+}
+
+.btn.AC {
+  background-color: #ffffff;
+  color: #02c753;
+  box-shadow: 1px 1px 1px 1px #dfe4eb;
+}
+
+#equal {
+  background-color: #02c753;
+  color: white;
+  box-shadow: 1px 1px 1px 1px #02b84e;
+}
+
+.btn.number:hover {
+  background-color: #e5eaf1;
+  box-shadow: 1px 1px 1px 1px #dfe4eb;
+}
+
+.btn.operator:hover {
+  background-color: #dbe3f0;
+  box-shadow: 1px 1px 1px 1px #d1d6dd;
+}
+
+.btn.AC:hover {
+  background-color: #e5eaf1;
+  box-shadow: 1px 1px 1px 1px #dfe4eb;
+}
+#equal:hover {
+  background-color: #07ac4c;
+  box-shadow: 1px 1px 1px 1px #02b84e;
+}
+
+.btn.number:active {
+  background-color: #e5eaf1;
+  box-shadow: 1px 1px 1px 1px inset #dfe4eb;
+  color: #9196a0;
+}
+
+.btn.operator:active {
+  background-color: #dbe3f0;
+  box-shadow: 1px 1px 1px 1px inset #d1d6dd;
+  color: #9196a0;
+}
+
+.btn.AC:active {
+  background-color: #e5eaf1;
+  box-shadow: 1px 1px 1px 1px inset #dfe4eb;
+  color: #9196a0;
+}
+
+#equal:active {
+  background-color: #14b255;
+  box-shadow: 1px 1px 1px 1px inset #02b84e;
+  color: #9196a0;
+}
+
+footer {
+  height: 200px;
+  background-color: #f5f6f7;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* box-shadow 잘 이해 안됨. 좀 더 공부 필요 */
